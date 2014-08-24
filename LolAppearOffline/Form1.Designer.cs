@@ -61,8 +61,7 @@
             "Latin America South",
             "Turkey",
             "Oceania",
-            "Russia",
-            "Republic of Korea"});
+            "Russia"});
             this.regionComboBox.Location = new System.Drawing.Point(93, 14);
             this.regionComboBox.Name = "regionComboBox";
             this.regionComboBox.Size = new System.Drawing.Size(121, 21);

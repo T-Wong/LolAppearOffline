@@ -26,14 +26,13 @@ namespace WindowsFormsApplication1
             // Dictionary used to map region with IP to block
             regionsIP.Add("North America", "216.133.234.21");
             regionsIP.Add("EU West", "185.40.64.69");
-            regionsIP.Add("EU Nordic & East", "0");
-            regionsIP.Add("Brazil", "0");
-            regionsIP.Add("Latin America North", "0");
-            regionsIP.Add("Latin America South", "0");
-            regionsIP.Add("Turkey", "0");
-            regionsIP.Add("Oceania", "0");
-            regionsIP.Add("Russia", "0");
-            regionsIP.Add("Republic of Korea", "0");
+            regionsIP.Add("EU Nordic & East", "66.150.148.21");
+            regionsIP.Add("Brazil", "66.151.33.22");
+            regionsIP.Add("Latin America North", "66.151.33.248");
+            regionsIP.Add("Latin America South", "66.151.33.249");
+            regionsIP.Add("Turkey", "95.172.65.28");
+            regionsIP.Add("Oceania", "192.64.169.22");
+            regionsIP.Add("Russia", "95.172.65.245");
         }
 
         private void enableButton_Click(object sender, EventArgs e)
