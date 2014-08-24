@@ -11,24 +11,24 @@ namespace WindowsFormsApplication1
 {
     public partial class Form1 : Form
     {
-        private void addFirewall(String ip)
-        {
-            Type tNetFwPolicy2 = Type.GetTypeFromProgID("HNetCfg.FwPolicy2");
-            INetFwPolicy2 fwPolicy2 = (INetFwPolicy2)Activator.CreateInstance(tNetFwPolicy2);
-            var currentProfiles = fwPolicy2.CurrentProfileTypes;
+        //private void addFirewall(String ip)
+        //{
+        //    Type tNetFwPolicy2 = Type.GetTypeFromProgID("HNetCfg.FwPolicy2");
+        //    INetFwPolicy2 fwPolicy2 = (INetFwPolicy2)Activator.CreateInstance(tNetFwPolicy2);
+        //    var currentProfiles = fwPolicy2.CurrentProfileTypes;
 
-            // Creates a new rule
-            INetFwRule2 inboundRule = (INetFwRule2)Activator.CreateInstance(Type.GetTypeFromProgID("HNetCfg.FWRule"));
-            inboundRule.Enabled = true;
-            inboundRule.LocalPorts = "1234";
-            inboundRule.Protocol = 6; // TCP
-            // ...
-            inboundRule.Profiles = currentProfiles;
+        //    // Creates a new rule
+        //    INetFwRule2 inboundRule = (INetFwRule2)Activator.CreateInstance(Type.GetTypeFromProgID("HNetCfg.FWRule"));
+        //    inboundRule.Enabled = true;
+        //    inboundRule.LocalPorts = "1234";
+        //    inboundRule.Protocol = 6; // TCP
+        //    // ...
+        //    inboundRule.Profiles = currentProfiles;
 
-            // Add the rule
-            INetFwPolicy2 firewallPolicy = (INetFwPolicy2)Activator.CreateInstance(Type.GetTypeFromProgID("HNetCfg.FwPolicy2"));
-            firewallPolicy.Rules.Add(inboundRule);
-        }
+        //    // Add the rule
+        //    INetFwPolicy2 firewallPolicy = (INetFwPolicy2)Activator.CreateInstance(Type.GetTypeFromProgID("HNetCfg.FwPolicy2"));
+        //    firewallPolicy.Rules.Add(inboundRule);
+        //}
         public Form1()
         {
             // Dictionary used to map region with IP
@@ -54,7 +54,7 @@ namespace WindowsFormsApplication1
 
         private void disableButton_Click(object sender, EventArgs e)
         {
-            Console.WriteLine("test");
+            Console.WriteLine(regionComboBox.Text);
         }
     }
 }
