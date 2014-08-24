@@ -76,6 +76,7 @@
             this.enableButton.TabIndex = 2;
             this.enableButton.Text = "Enable Chat";
             this.enableButton.UseVisualStyleBackColor = true;
+            this.enableButton.Click += new System.EventHandler(this.enableButton_Click);
             // 
             // richTextBox1
             // 
@@ -86,7 +87,7 @@
             this.richTextBox1.Location = new System.Drawing.Point(13, 42);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(283, 96);
+            this.richTextBox1.Size = new System.Drawing.Size(283, 113);
             this.richTextBox1.TabIndex = 3;
             this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
@@ -94,12 +95,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(308, 161);
+            this.ClientSize = new System.Drawing.Size(308, 178);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.enableButton);
             this.Controls.Add(this.regionComboBox);
             this.Controls.Add(this.disableButton);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoL Appear Offline";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);

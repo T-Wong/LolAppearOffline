@@ -120,6 +120,6 @@
   <data name="richTextBox1.Text" xml:space="preserve">
     <value>This utility blocks the League of Legends chat service. This will make it so that you appear offline and you are not able to message or view your friends. You are still able to chat in pre-game and in game, but not after game.
 
-Just select your region and click enable chat or disable chat.</value>
+Just select your region and click enable chat or disable chat. You may have to log in and out for changes to take effect.</value>
   </data>
 </root>

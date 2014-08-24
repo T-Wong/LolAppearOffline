@@ -7,3 +7,6 @@ C:\Users\Tyler\Documents\Visual Studio 2012\Projects\LolAppearOffline\LolAppearO
 C:\Users\Tyler\Documents\Visual Studio 2012\Projects\LolAppearOffline\LolAppearOffline\bin\Debug\LolAppearOffline.pdb
 C:\Users\Tyler\Documents\Visual Studio 2012\Projects\LolAppearOffline\LolAppearOffline\obj\Debug\LolAppearOffline.exe
 C:\Users\Tyler\Documents\Visual Studio 2012\Projects\LolAppearOffline\LolAppearOffline\obj\Debug\LolAppearOffline.pdb
+C:\Users\Tyler\Documents\Visual Studio 2012\Projects\LolAppearOffline\LolAppearOffline\bin\Debug\Interop.NetFwTypeLib.dll
+C:\Users\Tyler\Documents\Visual Studio 2012\Projects\LolAppearOffline\LolAppearOffline\obj\Debug\Interop.NetFwTypeLib.dll
+C:\Users\Tyler\Documents\Visual Studio 2012\Projects\LolAppearOffline\LolAppearOffline\obj\Debug\LolAppearOffline.csproj.ResolveComReference.cache
