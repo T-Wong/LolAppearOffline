@@ -33,16 +33,35 @@ namespace WindowsFormsApplication1
             regionsIP.Add("Turkey", "95.172.65.28");
             regionsIP.Add("Oceania", "192.64.169.22");
             regionsIP.Add("Russia", "95.172.65.245");
+
+            // Sets the default for the drop down list, which is North America
+            regionComboBox.SelectedIndex = 0;
         }
 
         private void enableButton_Click(object sender, EventArgs e)
         {
-            removeFirewall(regionComboBox.Text);
+            try
+            {
+                removeFirewall(regionComboBox.Text);
+            }
+            catch (Exception e2)
+            {
+                Console.WriteLine(e2.StackTrace);
+                System.Windows.Forms.MessageBox.Show("Failed to enable chat. Make sure that you are running as administrator.");
+            }
         }
 
         private void disableButton_Click(object sender, EventArgs e)
         {
-            addFirewall(regionsIP[regionComboBox.Text], regionComboBox.Text);
+            try
+            {
+                addFirewall(regionsIP[regionComboBox.Text], regionComboBox.Text);
+            }
+            catch (Exception e3)
+            {
+                Console.WriteLine(e3.StackTrace);
+                System.Windows.Forms.MessageBox.Show("Failed to disable chat. Make sure that you are running as administrator.");
+            }
         }
 
         // Used to add a rule to the outbound firewall
