@@ -3,7 +3,7 @@ LolAppearOffline
 
 A simple and small utility that makes it so that you appear offline in League of Legends.
 
-![alt tag](https://github.com/T-Wong/LolAppearOffline/GUI.png)
+![alt tag](https://raw.githubusercontent.com/T-Wong/LolAppearOffline/master/GUI.png)
 
 ## Regions Supported
 * North America
@@ -29,7 +29,7 @@ A simple and small utility that makes it so that you appear offline in League of
 * .NET Framework 2.0 or higher
 
 ## Installation
-1. Click [here] (https://github.com/T-Wong/BingBot/raw/master/Setup3/Setup3/Express/SingleImage/DiskImages/DISK1/setup.exe) to download the setup file.
+1. Click [here] (https://github.com/T-Wong/LolAppearOffline/raw/master/Setup3/Setup3/Express/SingleImage/DiskImages/DISK1/setup.exe) to download the setup file.
 2. Run the setup file (requires administrator privileges).
 
 or you can compile it yourself if you don't trust my pre-compiled version.
