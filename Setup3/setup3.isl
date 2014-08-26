@@ -1174,8 +1174,7 @@
 		<row><td>USERPROFILE</td><td>TARGETDIR</td><td>.:USERPR~1|UserProfile</td><td/><td>0</td><td/></row>
 		<row><td>WindowsFolder</td><td>TARGETDIR</td><td>.:Windows</td><td/><td>0</td><td/></row>
 		<row><td>WindowsVolume</td><td>TARGETDIR</td><td>.:WinRoot</td><td/><td>0</td><td/></row>
-		<row><td>lolapp_1_lol_appear_offline</td><td>tylerw_1_tyler_wong</td><td>LOLAPP~1|LoL Appear Offline</td><td/><td>1</td><td/></row>
-		<row><td>tylerw_1_tyler_wong</td><td>ProgramMenuFolder</td><td>TYLERW~1|Tyler Wong</td><td/><td>1</td><td/></row>
+		<row><td>newfolder1</td><td>ProgramMenuFolder</td><td>##ID_STRING6##</td><td/><td>1</td><td/></row>
 	</table>
 
 	<table name="DrLocator">
@@ -3757,6 +3756,10 @@
 		<row><td>ID_STRING2</td><td>1033</td><td>http://www.TylerWong.com</td><td>0</td><td/><td>-870147529</td></row>
 		<row><td>ID_STRING3</td><td>1033</td><td>Tyler Wong</td><td>0</td><td/><td>-870147529</td></row>
 		<row><td>ID_STRING4</td><td>1033</td><td>LAUNCH~1.EXE|Launch LolAppearOffline.exe</td><td>0</td><td/><td>-870138058</td></row>
+		<row><td>ID_STRING5</td><td>1033</td><td>Lol Appear Offline</td><td>0</td><td/><td>-735916954</td></row>
+		<row><td>ID_STRING6</td><td>1033</td><td>LOLAPP~1|LoL Appear Offline</td><td>0</td><td/><td>-735914778</td></row>
+		<row><td>ID_STRING7</td><td>1033</td><td>Lol Appear Offline</td><td>0</td><td/><td>-735933306</td></row>
+		<row><td>ID_STRING8</td><td>1033</td><td>Lol Appear Offline</td><td>0</td><td/><td>-735912730</td></row>
 		<row><td>IIDS_UITEXT_FeatureUninstalled</td><td>1033</td><td>This feature will remain uninstalled.</td><td>0</td><td/><td>-870164842</td></row>
 	</table>
 
@@ -3866,7 +3869,7 @@
 		<col def="I2">ISIconIndex</col>
 		<row><td>ARPPRODUCTICON.exe</td><td/><td>&lt;VSSolutionFolder&gt;\LolAppearOffline\favicon.ico</td><td>0</td></row>
 		<row><td>LolAppearOffline.e_41AD5132B16449ACA4A32DEC617ADBF9.exe</td><td/><td>&lt;VSSolutionFolder&gt;\LolAppearOffline\favicon.ico</td><td>0</td></row>
-		<row><td>LolAppearOffline.e_4770A7EF2DB94830B8A1D5D543E9B935.exe</td><td/><td>&lt;VSSolutionFolder&gt;\LolAppearOffline\favicon.ico</td><td>0</td></row>
+		<row><td>LolAppearOffline.e_E0A4733624574900B09D51EF1DEA522B.exe</td><td/><td>&lt;VSSolutionFolder&gt;\LolAppearOffline\favicon.ico</td><td>0</td></row>
 	</table>
 
 	<table name="IniFile">
@@ -3999,7 +4002,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>ISTheme</td><td>InstallShield Blue.theme</td></row>
 		<row><td>ISUSLock</td><td>{E2D1F444-7AAE-4463-8BC7-6EA5C8115ADD}</td></row>
 		<row><td>ISUSSignature</td><td>{D8F98C48-66F1-44D4-A8F6-0364F1C6F480}</td></row>
-		<row><td>ISVisitedViews</td><td>viewAssistant,viewISToday,viewAppV</td></row>
+		<row><td>ISVisitedViews</td><td>viewAssistant,viewISToday,viewAppV,viewShortcuts</td></row>
 		<row><td>Limited</td><td>1</td></row>
 		<row><td>LockPermissionMode</td><td>1</td></row>
 		<row><td>MsiExecCmdLineOptions</td><td/></row>
@@ -4454,7 +4457,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="i2">InstallMode</col>
 		<row><td>FileKey1</td><td>LolAppearOffline.exe</td><td/><td>tylerw_1_tyler_wong</td><td>2</td></row>
 		<row><td>FileKey2</td><td>LolAppearOffline.exe</td><td/><td>lolapp_1_lol_appear_offline</td><td>2</td></row>
-		<row><td>LolAppearOffline.exe</td><td>LolAppearOffline.exe</td><td/><td>lolapp_1_lol_appear_offline</td><td>2</td></row>
+		<row><td>LolAppearOffline.exe11</td><td>LolAppearOffline.exe</td><td/><td>newfolder1</td><td>2</td></row>
 	</table>
 
 	<table name="RemoveIniFile">
@@ -4540,8 +4543,8 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="S255">ISComments</col>
 		<col def="S255">ISShortcutName</col>
 		<col def="I4">ISAttributes</col>
-		<row><td>LolAppearOffline.exe</td><td>lolapp_1_lol_appear_offline</td><td>##IDS_SHORTCUT_DISPLAY_NAME1##</td><td>LolAppearOffline.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>LolAppearOffline.e_4770A7EF2DB94830B8A1D5D543E9B935.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
 		<row><td>LolAppearOffline.exe1</td><td>DesktopFolder</td><td>##IDS_SHORTCUT_DISPLAY_NAME1##</td><td>LolAppearOffline.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>LolAppearOffline.e_41AD5132B16449ACA4A32DEC617ADBF9.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>LolAppearOffline.exe11</td><td>newfolder1</td><td>##ID_STRING8##</td><td>LolAppearOffline.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>LolAppearOffline.e_E0A4733624574900B09D51EF1DEA522B.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="Signature">
