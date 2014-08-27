@@ -53,6 +53,7 @@
             this.regionComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.regionComboBox.FormattingEnabled = true;
             this.regionComboBox.Items.AddRange(new object[] {
+            "All Regions",
             "North America",
             "EU West",
             "EU Nordic & East",

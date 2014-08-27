@@ -33,7 +33,7 @@ namespace WindowsFormsApplication1
             regionsIP.Add("Oceania", "192.64.169.22");
             regionsIP.Add("Russia", "95.172.65.245");
 
-            // Sets the default for the drop down list, which is North America
+            // Sets the default for the drop down list, which is all regions
             regionComboBox.SelectedIndex = 0;
         }
 
@@ -41,7 +41,17 @@ namespace WindowsFormsApplication1
         {
             try
             {
-                removeFirewall(regionComboBox.Text);
+                if (regionComboBox.SelectedIndex == 0)
+                {
+                    foreach(KeyValuePair<string, string> entry in regionsIP)
+                    {
+                        removeFirewall(entry.Key);
+                    }
+                }
+                else
+                {
+                    removeFirewall(regionComboBox.Text);
+                }
                 System.Windows.Forms.MessageBox.Show(String.Format("Successfully enabled chat for {0}.", regionComboBox.Text), "Successfully Enabled Chat");
             }
             catch (Exception e2)
@@ -55,7 +65,17 @@ namespace WindowsFormsApplication1
         {
             try
             {
-                addFirewall(regionsIP[regionComboBox.Text], regionComboBox.Text);
+                if (regionComboBox.SelectedIndex == 0)
+                {
+                    foreach (KeyValuePair<string, string> entry in regionsIP)
+                    {
+                        addFirewall(regionsIP[entry.Key], entry.Key);
+                    }
+                }
+                else
+                {
+                    addFirewall(regionsIP[regionComboBox.Text], regionComboBox.Text);
+                }
                 System.Windows.Forms.MessageBox.Show(String.Format("Successfully disabled chat for {0}.", regionComboBox.Text), "Successfully Disabled Chat");
             }
             catch (Exception e3)
