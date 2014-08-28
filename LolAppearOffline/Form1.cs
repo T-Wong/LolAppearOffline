@@ -41,14 +41,14 @@ namespace WindowsFormsApplication1
         {
             try
             {
-                if (regionComboBox.SelectedIndex == 0)
+                if (regionComboBox.SelectedIndex == 0)  // equals "all regions"
                 {
                     foreach(KeyValuePair<string, string> entry in regionsIP)
                     {
                         removeFirewall(entry.Key);
                     }
                 }
-                else
+                else   // other regions
                 {
                     removeFirewall(regionComboBox.Text);
                 }
@@ -65,14 +65,14 @@ namespace WindowsFormsApplication1
         {
             try
             {
-                if (regionComboBox.SelectedIndex == 0)
+                if (regionComboBox.SelectedIndex == 0)  // equals "all regions"
                 {
                     foreach (KeyValuePair<string, string> entry in regionsIP)
                     {
                         addFirewall(regionsIP[entry.Key], entry.Key);
                     }
                 }
-                else
+                else  // other regions
                 {
                     addFirewall(regionsIP[regionComboBox.Text], regionComboBox.Text);
                 }
