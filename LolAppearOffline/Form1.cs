@@ -56,7 +56,6 @@ namespace WindowsFormsApplication1
             }
             catch (Exception e2)
             {
-                Console.WriteLine(e2.StackTrace);
                 System.Windows.Forms.MessageBox.Show("Failed to enable chat. Make sure that you are running as administrator.", "Failed to Enable Chat");
             }
         }
@@ -80,7 +79,6 @@ namespace WindowsFormsApplication1
             }
             catch (Exception e3)
             {
-                Console.WriteLine(e3.StackTrace);
                 System.Windows.Forms.MessageBox.Show("Failed to disable chat. Make sure that you are running as administrator.", "Failed to Disable Chat");
             }
         }
