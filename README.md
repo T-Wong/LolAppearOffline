@@ -1,6 +1,6 @@
 LolAppearOffline
 ================
-
+Currently not working. I'm looking into it (9/2/14).
 A simple and small utility that makes it so that you appear offline in League of Legends.
 
 ![alt tag](https://raw.githubusercontent.com/T-Wong/LolAppearOffline/master/GUI.png)
